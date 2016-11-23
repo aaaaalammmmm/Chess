@@ -1,0 +1,11 @@
+package chess.rules;
+
+public interface KingRules {
+	/**
+	 * <p>
+	 * Limits how many squares the King can move.
+	 * </p>
+	 */
+	int movementLimit = 1;
+	
+}

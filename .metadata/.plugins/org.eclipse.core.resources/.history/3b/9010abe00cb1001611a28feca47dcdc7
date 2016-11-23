@@ -1,0 +1,20 @@
+package chess.rules;
+
+/**
+ * <p>
+ * Defines an interface to supply the rules for a King.
+ * </p>
+ * 
+ * @author Sergio
+ * @version 1.0
+ */
+public interface KingRules {
+    /**
+     * <p>
+     * Limits how many squares the King can move.
+     * </p>
+     */
+    int MOVE_LIMIT = 1;
+    public move();
+    
+}

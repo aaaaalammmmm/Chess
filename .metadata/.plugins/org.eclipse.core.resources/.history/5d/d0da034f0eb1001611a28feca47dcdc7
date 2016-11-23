@@ -1,0 +1,21 @@
+package chess.pieces;
+
+/**
+ * <p>
+ * Master Piece class.
+ * </p>
+ * 
+ * @author Sergio
+ * @version 1.0
+ */
+public abstract class Piece {
+    /**
+     * X position on the board.
+     */
+    private int xVal;
+    /**
+     * Y position on the board.
+     */
+    private int yVal;
+
+}
