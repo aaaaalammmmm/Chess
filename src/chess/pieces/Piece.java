@@ -10,11 +10,21 @@ package chess.pieces;
  */
 public abstract class Piece {
     /**
+     * <p>
+     * Name of the piece.
+     * </p>
+     */
+    private String name;
+    /**
+     * <p>
      * X position on the board.
+     * </p>
      */
     private int xVal;
     /**
+     * <p>
      * Y position on the board.
+     * </p>
      */
     private int yVal;
 
@@ -64,4 +74,26 @@ public abstract class Piece {
         this.yVal = yVal;
     }
 
+    /**
+     * <p>
+     * Gets the name of the piece.
+     * </p>
+     * 
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * <p>
+     * Sets the name of the piece.
+     * </p>
+     * 
+     * @param n
+     *            Accepts the name of the piece.
+     */
+    public void setName(String n) {
+        name = n;
+    }
 }

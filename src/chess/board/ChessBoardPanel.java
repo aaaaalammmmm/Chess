@@ -12,6 +12,7 @@ import javax.swing.JPanel;
  * @author Angus Lam
  * @version Nov 22, 2016
  */
+@SuppressWarnings("serial")
 public class ChessBoardPanel extends JPanel {
     /**
      * The number of columns on a chess board.
