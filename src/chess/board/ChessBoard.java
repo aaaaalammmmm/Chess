@@ -5,12 +5,15 @@ import java.awt.Color;
 import javax.swing.JFrame;
 
 /**
- *
+ * <p>
+ * Creates the main chess board?
+ * </p>
  *
  * @author Angus Lam
  * @version Nov 22, 2016
  */
-public class chessBoard extends JFrame {
+@SuppressWarnings("serial")
+public class ChessBoard extends JFrame {
     /**
      * <p>
      * Defines the width of the chess board.
@@ -29,7 +32,7 @@ public class chessBoard extends JFrame {
      * Constructs the chess board.
      * </p>
      */
-    public chessBoard() {
+    public ChessBoard() {
         super("Chess Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.white);
@@ -45,6 +48,6 @@ public class chessBoard extends JFrame {
      *            command line arguments
      */
     public static void main(String[] args) {
-        new chessBoard();
+        new ChessBoard();
     }
 }
