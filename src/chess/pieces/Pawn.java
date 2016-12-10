@@ -30,7 +30,7 @@ public class Pawn extends Piece implements PawnRules {
      * team.
      * </p>
      * 
-     * @param n
+     * @param name
      *            Accepts the name of the Pawn.
      * @param xPos
      *            Accepts the X position of the pawn on the board.
@@ -39,11 +39,9 @@ public class Pawn extends Piece implements PawnRules {
      * @param team
      *            Accepts the team of the pawn.
      */
-    public Pawn(String n, int xPos, int yPos, boolean team) {
-        super.setName(n);
-        super.setxVal(xPos);
-        super.setyVal(yPos);
-        this.team = team;
+    public Pawn(String name, int xPos, int yPos, boolean team) {
+        super(name, xPos, yPos);
+        setTeam(team);
     }
 
     @Override
@@ -62,6 +60,30 @@ public class Pawn extends Piece implements PawnRules {
             }
         }
 
+    }
+
+    
+    /**
+     * Returns which team pawn piece belongs to.
+     * True  = black team
+     * False = white team
+     * 
+     * @return Which team the pawn piece belongs to
+     */
+    public boolean isTeam() {
+        return team;
+    }
+
+    /**
+     * Sets which team the pawn piece belongs to.
+     * True  = black team
+     * False = white team
+     * 
+     * @param team
+     *          The team the pawn piece belongs to
+     */
+    public void setTeam(boolean team) {
+        this.team = team;
     }
 
     /**

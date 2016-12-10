@@ -27,6 +27,12 @@ public abstract class Piece {
      * </p>
      */
     private int yVal;
+    
+    public Piece(String name, int x, int y) {
+        setName(name);
+        setxVal(x);
+        setyVal(y);
+    }
 
     /**
      * <p>
